@@ -1,0 +1,15 @@
+{
+    "name": "Ak/Brands",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Add your description here",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Andrew Kett",
+            "email":"ajkett@gmail.com"
+        }
+    ]
+}

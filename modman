@@ -1,0 +1,5 @@
+src/app/code/community/Ak/Brands                                app/code/community/Ak/Brands
+src/app/design/adminhtml/default/default/layout/ak/brands.xml   app/design/adminhtml/default/default/layout/ak/brands.xml
+src/app/design/frontend/base/default/layout/ak/brands.xml       app/design/frontend/base/default/layout/ak/brands.xml
+src/app/design/frontend/base/default/template/ak/brands         app/design/frontend/base/default/template/ak/brands
+src/app/etc/modules/*                                           app/etc/modules/

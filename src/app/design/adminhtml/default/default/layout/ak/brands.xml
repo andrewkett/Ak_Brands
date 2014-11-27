@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_brand_index>
+        <reference name="content">
+            <block type="ak_brands/adminhtml_brand" name="brand" />
+        </reference>
+    </adminhtml_brand_index>
+
+    <adminhtml_brand_edit>
+
+        <!--<reference name="head">-->
+            <!--<action method="addJs"><script>locator/locator.js</script></action>-->
+        <!--</reference>-->
+
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="ak_brands/adminhtml_brand_edit" name="brand_edit"></block>
+            <!--<block type="ak_locator/adminhtml_location_edit_map" name="location_edit_map"></block>-->
+        </reference>
+
+        <reference name="left">
+            <!-- <block type="adminhtml/store_switcher" name="store_switcher" before="-"></block> -->
+            <block type="ak_brands/adminhtml_brand_edit_tabs" name="brand_tabs"></block>
+        </reference>
+    </adminhtml_brand_edit>
+
+</layout>

@@ -1,0 +1,12 @@
+
+
+<?php $brand = $this->getBrand(); ?>
+
+<?php var_dump($brand); ?>
+
+<?php if ($brand): ?>
+
+    <h3><?php echo $this->__('Brand'); ?></h3>
+    <p><a href="<?php echo $this->helper('smashingmagazine_brandexample/brand')->getBrandUrl($brand); ?>" title="<?php echo $this->escapeHtml($brand->getName()); ?>"><?php echo $brand->getName(); ?></a></p>
+
+<?php endif; ?>
