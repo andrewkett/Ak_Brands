@@ -1,8 +1,8 @@
 {
-    "name": "Ak/Brands",
+    "name": "andrewkett/brands",
     "license": "OSL-3.0",
     "type": "magento-module",
-    "description": "Add your description here",
+    "description": "A brands extension for Magento",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     },
