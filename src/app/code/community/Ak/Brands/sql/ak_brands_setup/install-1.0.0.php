@@ -475,14 +475,25 @@ $table = $installer->getConnection()
 $installer->getConnection()->createTable($table);
 
 
-//$installer->getConnection()->addColumn($installer->getTable('core/url_rewrite')ou, 'brand_id', array(
-//    'type'      => Varien_Db_Ddl_Table::TYPE_INTEGER,
-//    'unsigned'  => true,
-//    'nullable'  => true,
-//    'comment'   => 'Brand Id'
-//));
-
-
+// the attribute added will be displayed under the group/tab Special Attributes in product edit page
+$installer->addAttribute(Mage_Catalog_Model_Product::ENTITY, 'brand', array(
+    'group'         => 'General',
+    'input'         => 'select',
+    'type'          => 'int',
+    'label'         => 'Brand',
+    'source'      => 'ak_brands/product_attribute_source_brand',
+    'backend'       => '',
+    'visible'       => 1,
+    'required'      => 0,
+    'user_defined' => 0,
+    'searchable' => 1,
+    'filterable' => 0,
+    'comparable'    => 1,
+    'visible_on_front' => 1,
+    'visible_in_advanced_search'  => 1,
+    'is_html_allowed_on_front' => 1,
+    'global'        => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL,
+));
 
 
 $installer->installEntities();

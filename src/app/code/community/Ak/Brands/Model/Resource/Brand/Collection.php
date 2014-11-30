@@ -29,7 +29,11 @@ class Ak_Brands_Model_Resource_Brand_Collection extends Mage_Eav_Model_Entity_Co
      */
     protected function _initSelect()
     {
-        $this->getSelect()->from(array('e' => $this->getEntity()->getEntityTable()));
+
+        $this->getSelect()
+            ->from(array('e' => $this->getEntity()->getEntityTable()));
+
+        $this->addAttributeToSelect('title');
 
         return $this;
     }

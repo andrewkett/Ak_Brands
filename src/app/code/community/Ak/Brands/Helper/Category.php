@@ -3,7 +3,7 @@
 /**
  * Class Ak_Brands_Helper_Category
  */
-class Ak_Brands_Helper_Category
+class Ak_Brands_Helper_Category extends Mage_Core_Helper_Abstract
 {
     public function getCategoryOptions()
     {
