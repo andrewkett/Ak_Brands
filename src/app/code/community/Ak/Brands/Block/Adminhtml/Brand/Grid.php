@@ -40,43 +40,17 @@ class Ak_Brands_Block_Adminhtml_Brand_Grid extends Mage_Adminhtml_Block_Widget_G
     protected function _prepareColumns()
     {
         $this->addColumn('id', array(
-            'header'    => Mage::helper('ak_locator')->__('ID'),
+            'header'    => Mage::helper('ak_brands')->__('ID'),
             'align'     =>'right',
             'width'     => '50px',
             'index'     => 'entity_id',
         ));
 
         $this->addColumn('title', array(
-            'header'    => Mage::helper('ak_locator')->__('Title'),
+            'header'    => Mage::helper('ak_brands')->__('Title'),
             'align'     =>'left',
             'index'     => 'title',
         ));
-//
-//        $this->addColumn('address', array(
-//            'header'    => Mage::helper('ak_locator')->__('Address'),
-//            'align'     =>'left',
-//            'index'     => 'address',
-//        ));
-//
-//        $this->addColumn('postal_code', array(
-//            'header'    => Mage::helper('ak_locator')->__('Postalcode'),
-//            'align'     => 'left',
-//            'index'     => 'postal_code',
-//        ));
-//
-//        $this->addColumn('country', array(
-//            'header'    => Mage::helper('ak_locator')->__('Country'),
-//            'align'     => 'left',
-//            'index'     => 'country',
-//        ));
-//
-//        $this->addColumn('is_enabled', array(
-//            'header'    => Mage::helper('ak_locator')->__('Enabled'),
-//            'align'     => 'left',
-//            'index'     => 'is_enabled',
-//            'type'  => 'options',
-//            'options' => array('1'=>'Yes','0'=>'No'),
-//        ));
 
         return parent::_prepareColumns();
     }

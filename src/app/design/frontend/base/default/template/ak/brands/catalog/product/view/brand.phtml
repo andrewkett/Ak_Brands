@@ -6,10 +6,9 @@
         $brand_title = $this->escapeHtml($brand->getTitle());
     ?>
     <div class="product-brand">
-            <a href="<?php echo $brand_url; ?>" title="<?php echo $brand_title; ?>">
-                More <?php echo $brand->getTitle(); ?> products
-            </a>
-
+        by <a href="<?php echo $brand_url; ?>" title="<?php echo $brand_title; ?>">
+            <?php echo $brand->getTitle(); ?>
+        </a>
     </div>
     <style>
         /** @todo move to stylesheet **/
