@@ -60,20 +60,8 @@
             </ak_brands_setup>
         </resources>
     </global>
+
     <adminhtml>
-        <menu>
-            <ak_brands>
-                <title>Brands</title>
-                <sort_order>70</sort_order>
-                <children>
-                    <brands>
-                        <title>Manage Brands</title>
-                        <action>adminhtml/brand</action>
-                        <sort_order>30</sort_order>
-                    </brands>
-                </children>
-            </ak_brands>
-        </menu>
         <layout>
             <updates>
                 <ak_brands>
@@ -81,26 +69,6 @@
                 </ak_brands>
             </updates>
         </layout>
-
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <!--<locator_settings>-->
-                                        <!--<title>Locator Module Section</title>-->
-                                        <!--</locator_settings>-->
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>
     </adminhtml>
     <admin>
         <routers>

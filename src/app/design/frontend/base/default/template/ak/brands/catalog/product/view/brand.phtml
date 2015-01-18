@@ -1,10 +1,20 @@
 <?php $brand = $this->getBrand(); ?>
 
 <?php if ($brand): ?>
-    <h3><?php echo $this->__('Brand'); ?></h3>
-    <p>
-        <a href="<?php echo $this->helper('ak_brands/brand')->getBrandUrl($brand); ?>" title="<?php echo $this->escapeHtml($brand->getTitle()); ?>">
-            <?php echo $brand->getTitle(); ?>
-        </a>
-    </p>
+    <?php
+        $brand_url = $this->helper('ak_brands/brand')->getBrandUrl($brand);
+        $brand_title = $this->escapeHtml($brand->getTitle());
+    ?>
+    <div class="product-brand">
+            <a href="<?php echo $brand_url; ?>" title="<?php echo $brand_title; ?>">
+                More <?php echo $brand->getTitle(); ?> products
+            </a>
+
+    </div>
+    <style>
+        /** @todo move to stylesheet **/
+        .product-brand {
+            clear:both;
+        }
+    </style>
 <?php endif; ?>

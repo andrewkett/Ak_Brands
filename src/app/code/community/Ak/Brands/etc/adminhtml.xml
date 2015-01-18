@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <brands translate="title" module="ak_brands">
+                    <title>Manage Brands</title>
+                    <action>adminhtml/brand</action>
+                    <sort_order>19</sort_order>
+                </brands>
+            </children>
+        </catalog>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <!--<locator_settings>-->
+                                    <!--<title>Locator Module Section</title>-->
+                                    <!--</locator_settings>-->
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
