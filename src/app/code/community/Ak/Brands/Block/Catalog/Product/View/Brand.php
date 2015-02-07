@@ -15,8 +15,8 @@ class Ak_Brands_Block_Catalog_Product_View_Brand extends Mage_Core_Block_Templat
         }
 
         $brandId = (int)$product->getBrand();
-
         $brand = Mage::getModel('ak_brands/brand')->load($brandId);
+
         if ($brand->getId() < 1) {
             return false;
         }

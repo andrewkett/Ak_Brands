@@ -5,6 +5,10 @@
  */
 class Ak_Brands_Helper_Category extends Mage_Core_Helper_Abstract
 {
+
+    /**
+     * @return array
+     */
     public function getCategoryOptions()
     {
         $categoriesArray = Mage::getModel('catalog/category')
@@ -14,6 +18,8 @@ class Ak_Brands_Helper_Category extends Mage_Core_Helper_Abstract
             ->addFieldToFilter('is_active', array('eq'=>'1'))
             ->load()
             ->toArray();
+
+        $categories = array();
 
         foreach ($categoriesArray as $categoryId => $category) {
             if (isset($category['name'])) {
