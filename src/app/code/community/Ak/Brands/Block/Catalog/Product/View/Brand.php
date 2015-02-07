@@ -6,21 +6,60 @@
 class Ak_Brands_Block_Catalog_Product_View_Brand extends Mage_Core_Block_Template
 {
 
+    /**
+     * @return Ak_Brands_Model_Brand
+     */
     public function getBrand()
     {
-        $product = Mage::registry('current_product');
+        if ($this->getData('brand') === null) {
 
-        if (!$product instanceof Mage_Catalog_Model_Product) {
-            return false;
+            echo 'here';
+
+            $product = Mage::registry('current_product');
+
+            if (!$product instanceof Mage_Catalog_Model_Product) {
+                return false;
+            }
+
+            $brandId = (int)$product->getBrand();
+
+            if (!$brandId) {
+                return false;
+            }
+
+            $brand = Mage::getModel('ak_brands/brand')->load($brandId);
+
+            $this->setData('brand', $brand);
         }
 
-        $brandId = (int)$product->getBrand();
-        $brand = Mage::getModel('ak_brands/brand')->load($brandId);
+        return $this->getData('brand');
+    }
 
-        if ($brand->getId() < 1) {
-            return false;
+    /**
+     * @return bool
+     */
+    public function showBrand()
+    {
+        if ($this->getBrand()->getId() >= 1) {
+            return true;
         }
 
-        return $brand;
+        return false;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBrandUrl()
+    {
+        return $this->helper('ak_brands/brand')->getBrandUrl($this->getBrand());
+    }
+
+    /**
+     * @return string
+     */
+    public function getBrandTitle()
+    {
+        return $this->getBrand()->getTitle();
     }
 }

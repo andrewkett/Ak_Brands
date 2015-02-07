@@ -1,13 +1,7 @@
-<?php $brand = $this->getBrand(); ?>
-
-<?php if ($brand): ?>
-    <?php
-        $brand_url = $this->helper('ak_brands/brand')->getBrandUrl($brand);
-        $brand_title = $this->escapeHtml($brand->getTitle());
-    ?>
+<?php if ($this->showBrand()): ?>
     <div class="product-brand">
-        by <a href="<?php echo $brand_url; ?>" title="<?php echo $brand_title; ?>">
-            <?php echo $brand->getTitle(); ?>
+        by <a href="<?php echo $this->getBrandUrl(); ?>" title="<?php echo $this->escapeHtml($this->getBrandTitle()); ?>">
+            <?php echo $this->getBrandTitle(); ?>
         </a>
     </div>
     <style>
