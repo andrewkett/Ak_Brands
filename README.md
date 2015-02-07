@@ -1,4 +1,6 @@
-# Ak Brands Magento Brand Extension
+# Magento Brand Extension
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/andrewkett/Ak_Brands/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/andrewkett/Ak_Brands/?branch=master)
 
 ## Setup Theme
 
