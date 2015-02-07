@@ -15,11 +15,7 @@
 
 /* @var $installer Ak_Brands_Model_Resource_Setup */
 $installer = $this;
-
-//die('here');
-
 $installer->startSetup();
-
 
 
 /* Create table 'ak_brands/location' */

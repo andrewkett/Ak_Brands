@@ -69,7 +69,7 @@ class Ak_Brands_Model_Resource_Setup extends Mage_Eav_Model_Entity_Setup
             $attributeId = $attributeIds[$brand][$attributeCode];
             $attribute['system'] = isset($attribute['system']) ? $attribute['system'] : true;
             $attribute['visible'] = isset($attribute['visible']) ? $attribute['visible'] : true;
-            if ($attribute['system'] != true || $attribute['visible'] != false) {
+            if (true !== $attribute['system'] || false !== $attribute['visible']) {
                 $usedInForms = array(
                     'brand_create',
                     'brand_edit'
