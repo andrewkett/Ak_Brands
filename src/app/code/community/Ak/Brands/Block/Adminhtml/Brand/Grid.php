@@ -28,10 +28,6 @@ class Ak_Brands_Block_Adminhtml_Brand_Grid extends Mage_Adminhtml_Block_Widget_G
     {
         $collection = Mage::getModel('ak_brands/brand')->getCollection()
             ->addAttributeToSelect('title');
-//            ->addAttributeToSelect('geocoded')
-//            ->addAttributeToSelect('address')
-//            ->addAttributeToSelect('postal_code')
-//            ->addAttributeToSelect('country');
 
         $this->setCollection($collection);
         return parent::_prepareCollection();

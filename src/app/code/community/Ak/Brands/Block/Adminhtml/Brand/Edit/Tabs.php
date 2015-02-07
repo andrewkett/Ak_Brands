@@ -16,88 +16,8 @@ class Ak_Brands_Block_Adminhtml_Brand_Edit_Tabs extends Mage_Adminhtml_Block_Wid
         $this->addTab('form_section', array(
             'label'     => Mage::helper('ak_brands')->__('Brand Information'),
             'title'     => Mage::helper('ak_brands')->__('Brand Information'),
-            //'content'   => $this->getLayout()->createBlock('ak_brands/adminhtml_brand_edit_form')->toHtml(),
         ));
 
-//        $this->addTab('answers_section', array(
-//            'label'     => Mage::helper('ak_brands')->__('Brand Answers'),
-//            'title'     => Mage::helper('ak_brands')->__('Brand Answers'),
-//            'content'   => $this->getLayout()->createBlock('adminhtml/poll_edit_tab_answers')
-//                    ->append($this->getLayout()->createBlock('adminhtml/poll_edit_tab_answers_list'))
-//                    ->toHtml(),
-//            'active'    => ( $this->getRequest()->getParam('tab') == 'answers_section' ) ? true : false,
-//        ));
         return parent::_beforeToHtml();
     }
-
-
-//    public function __construct()
-//    {
-//        parent::__construct();
-//        $this->setId('location_info_tabs');
-//        $this->setDestElementId('edit_form');
-//        $this->setTitle(Mage::helper('ak_brands')->__('Brand Information'));
-//
-//        $this->setTabStructure(array(
-//            'location_address' => array(
-//                'address',
-//                'administrative_area',
-//                'sub_administrative_area',
-//                'locality',
-//                'dependent_locality',
-//                'postal_code',
-//                'thoroughfare',
-//                'premise',
-//                'sub_premise',
-//                'country',
-//                'data',
-//                'geocoded',
-//                'latitude',
-//                'longitude'
-//            ),
-//            'location_details' => array(
-//                'title',
-//                'is_enabled'
-//            ),
-//            'location_seo' => array(
-//                'url_key',
-//                'meta_title',
-//                'meta_description',
-//                'meta_keywords'
-//            ),
-//        ));
-//    }
-//
-//    protected function _prepareLayout()
-//    {
-//
-//        $this->addTab('location_details', array(
-//            'label'     => Mage::helper('ak_locator')->__('Location Details'),
-//            'content'   =>  $this->getLayout()
-//                    ->createBlock('ak_locator/adminhtml_location_edit_tab_details')
-//                    ->setTabStructure($this->getTabStructure())
-//                    ->initForm()
-//                    ->toHtml()
-//        ));
-//
-//        $this->addTab('location_address', array(
-//            'label'     => Mage::helper('ak_locator')->__('Location Address'),
-//            'content'   =>  $this->getLayout()
-//                    ->createBlock('ak_locator/adminhtml_location_edit_tab_address')
-//                    ->setTabStructure($this->getTabStructure())
-//                    ->initForm()
-//                    ->toHtml()
-//        ));
-//
-//        $this->addTab('location_seo', array(
-//            'label'     => Mage::helper('ak_locator')->__('SEO'),
-//            'content'   =>  $this->getLayout()
-//                    ->createBlock('ak_locator/adminhtml_location_edit_tab_seo')
-//                    ->setTabStructure($this->getTabStructure())
-//                    ->initForm()
-//                    ->toHtml()
-//        ));
-//
-//        return parent::_prepareLayout();
-//    }
 }

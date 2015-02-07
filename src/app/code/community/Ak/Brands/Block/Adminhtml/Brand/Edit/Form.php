@@ -39,19 +39,7 @@ class Ak_Brands_Block_Adminhtml_Brand_Edit_Form extends Mage_Adminhtml_Block_Wid
                 'input' => 'select',
                 'required' => true,
                 'options' => Mage::helper('ak_brands/category')->getCategoryOptions(),
-            ),
-//            'cms_page' => array(
-//                'label' => $this->__('Visibility'),
-//                'input' => 'select',
-//                'required' => true,
-//                'options' => $brandSingleton->getAvailableVisibilies(),
-//            ),
-//            'link_to' => array(
-//                'label' => $this->__('Visibility'),
-//                'input' => 'select',
-//                'required' => true,
-//                'options' => $brandSingleton->getAvailableVisibilies(),
-//            ),
+            )
 
             /**
              * Note: we have not included created_at or updated_at.
