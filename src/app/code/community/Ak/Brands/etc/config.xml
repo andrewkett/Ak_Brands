@@ -91,4 +91,12 @@
             </updates>
         </layout>
     </frontend>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Ak_Brands />
+            </modules>
+        </suite>
+    </phpunit>
 </config>
