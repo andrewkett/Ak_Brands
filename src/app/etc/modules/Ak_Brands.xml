@@ -4,7 +4,13 @@
         <Ak_Brands>
             <active>true</active>
             <codePool>community</codePool>
-            <depends></depends>
+            <depends>
+                <Mage_Core />
+                <Mage_Eav />
+                <Mage_Catalog />
+                <Mage_Admin />
+                <Mage_Adminhtml />
+            </depends>
         </Ak_Brands>
     </modules>
 </config>

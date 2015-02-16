@@ -7,6 +7,8 @@ class Ak_Brands_Helper_Category extends Mage_Core_Helper_Abstract
 {
 
     /**
+     * List all categories to display in dropdown on product page
+     *
      * @return array
      */
     public function getCategoryOptions()

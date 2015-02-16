@@ -1,6 +1,5 @@
 <?php
 /**
- * Location extension for Magento
  *
  * NOTICE OF LICENSE
  *
@@ -11,7 +10,7 @@
  *
  * @copyright 2013 Andrew Kett. (http://www.andrewkett.com)
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @link      http://andrewkett.github.io/Ak_Locator/
+ * @link      http://andrewkett.github.io/Ak_Brands/
  */
 class Ak_Brands_Block_Adminhtml_Brand_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
